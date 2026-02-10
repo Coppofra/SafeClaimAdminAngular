@@ -1,13 +1,34 @@
-<h2>Crea Nuovo Account</h2>
+<div class="page">
+  <div class="card">
+    <h2>Crea Nuovo Account</h2>
 
-<input placeholder="Username">
-<input placeholder="Email">
-<input type="password" placeholder="Password">
+    <!-- USERNAME -->
+    <div class="field">
+      <label>Username *</label>
+      <input type="text" placeholder="es. mario.rossi">
+    </div>
 
-<div *ngFor="let r of roles">
-  <label>
-    <input type="checkbox"> {{ r }}
-  </label>
+    <!-- EMAIL -->
+    <div class="field">
+      <label>Email *</label>
+      <input type="email" placeholder="email@esempio.it">
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="field">
+      <label>Password *</label>
+      <input type="password" placeholder="••••••••">
+    </div>
+
+    <h4>Ruoli</h4>
+
+    <!-- CHECKBOX -->
+    <label class="role-item" *ngFor="let r of roles">
+      <input type="checkbox">
+      <span class="check"></span>
+      <span class="text">{{ r }}</span>
+    </label>
+
+    <button class="primary">Crea</button>
+  </div>
 </div>
-
-<button>Crea</button>

@@ -1,5 +1,15 @@
-<h2>Seleziona Utente</h2>
+<div class="page">
+  <h2>Seleziona Utente</h2>
 
-<div *ngFor="let u of users" (click)="open(u.id)">
-  <strong>{{ u.name }}</strong> – {{ u.email }}
+  <div class="user-card"
+       *ngFor="let u of users"
+       (click)="open(u.id)">
+
+    <div>
+      <strong>{{ u.name }}</strong>
+      <p>{{ u.email }}</p>
+    </div>
+
+    <span class="arrow">›</span>
+  </div>
 </div>

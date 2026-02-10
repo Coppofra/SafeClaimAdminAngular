@@ -1,0 +1,23 @@
+button {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #f3f4f6;
+  margin: 6px;
+  min-width: 90px;
+}
+
+button.active {
+  background-color: #2563eb;
+  color: white;
+  border-color: transparent;
+}
+
+button.danger {
+  width: 100%;
+  margin-top: 24px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  font-weight: bold;
+}

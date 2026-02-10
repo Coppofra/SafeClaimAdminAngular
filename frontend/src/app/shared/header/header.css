@@ -1,0 +1,23 @@
+header {
+  height: 90px;
+  background-color: #1e66f5;
+  color: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+strong {
+  font-size: 18px;
+}
+
+button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 12px;
+}
