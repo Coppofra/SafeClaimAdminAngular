@@ -1,0 +1,4 @@
+<button *ngFor="let r of roles"
+  [class.active]="user?.roles?.includes(r)">
+  {{ r }}
+</button>

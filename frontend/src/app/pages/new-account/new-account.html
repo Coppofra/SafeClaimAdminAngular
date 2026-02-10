@@ -1,0 +1,13 @@
+<h2>Crea Nuovo Account</h2>
+
+<input placeholder="Username">
+<input placeholder="Email">
+<input type="password" placeholder="Password">
+
+<div *ngFor="let r of roles">
+  <label>
+    <input type="checkbox"> {{ r }}
+  </label>
+</div>
+
+<button>Crea</button>
